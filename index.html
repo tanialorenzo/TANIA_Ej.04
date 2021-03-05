@@ -1,29 +1,72 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vídeo y Audio</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vídeo y Audio</title>
+    <title>markee</title>
 </head>
 
 
 <style>
     video{
-        border: 5px solid blue;
+        width: 45%;
+        height:45%;
+        border: 5px solid indigo;
         border-radius: 25px;
+    }
+    #video{
+        margin-top: 150px;
     }
 
 
+    #caja{
+        background-color: indigo;
+    }
+
+    #audio{
+        margin-top: 70px;
+    }
+
+h1:hover{
+    color: indigo;
+    transition: 2s;
+    text-shadow: 6px 6px 6px blue;
+}
 
 </style>
 
-<body>
-    <video autoplay muted loop controls>
-        <source src="video.mp4" type="video/mp4">
-        <source src="video.mp4" type="video/mov">
+<body style="background-color: rgba(174, 87, 231, 0.521);">
+
+    <center>
+        <div id="caja">
+        <h1 style="color: rgb(246, 244, 248);">PRUEBA DE VÍDEO</h1>
+        </div>
+
+            <video id="video" autoplay muted loop controls>
+                <source src="video.mp4" >
+                <source src="video.mp4" >
+            </video>
+
+            <video autoplay muted loop controls>
+                <source src="video.mp4" >
+                <source src="video.mp4" >
+            </video>
+
+        <audio id="audio" src="Battleship.ogg" controls></audio>
+    </center>
+
+    <marquee><h1>Este texto va de derecha a izquierda.</h1></marquee>
+        <marquee direction="up"><h2>Este texto se desplazará de abajo hacia arriba.</h2></marquee>
+        <marquee direction="down" width="250" height="200" behavior="alternate"          style="border:solid">
+
+        <marquee behavior="alternate">
+        Este texto rebota.
+        </marquee>
+
+    </marquee>
 
 
-    </video>
 </body>
 </html>
